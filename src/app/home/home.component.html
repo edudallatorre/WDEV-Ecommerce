@@ -1,0 +1,24 @@
+<div class="container">
+
+    <h1>
+        Produtos da minha loja
+    </h1>
+
+    
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let produto of produtos">
+                <td>{{produto.descricao}}</td>
+                <td>R$ {{produto.valor | number: '.2'}}</td>
+            </tr>
+            
+        </tbody>
+            
+    </table>
+</div>
